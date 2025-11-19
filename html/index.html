@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Koleka is a next-generation crowdfunding platform for bold African makers and global changemakers." />
+    <title>Koleka — Fund bold ideas, faster</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container top-bar">
+        <a class="brand" href="/">
+          <span class="brand-mark">K</span>
+          <span>KOLEKA</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/projects" data-nav="projects">Explore</a>
+          <a href="/create" data-nav="create">Launch</a>
+          <a href="/signup" class="btn btn-ghost" data-auth-link>Sign in</a>
+          <span class="pill is-hidden" data-user-pill></span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="glow-card">
+            <span class="tagline">Africa-built. Globally backed.</span>
+            <h1>Fund ideas that move communities forward.</h1>
+            <p>
+              Koleka brings storytellers, inventors, and community leaders together with backers across the continent and beyond. Launch your next project with powerful funding tools, brilliant storytelling layouts, and trusted pledge flows.
+            </p>
+            <div class="hero-cta">
+              <a href="/create" class="btn btn-primary">Launch a project</a>
+              <a href="/projects" class="btn btn-ghost">Discover campaigns</a>
+            </div>
+          </div>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <span class="badge-light">Live now</span>
+              <strong id="home-stat-live">3</strong>
+              <span>projects smashing their goals this week</span>
+            </article>
+            <article class="stat-card">
+              <span class="badge-light">Funds raised</span>
+              <strong id="home-stat-volume">$0</strong>
+              <span>pledged towards creative ventures</span>
+            </article>
+            <article class="stat-card">
+              <span class="badge-light">Creators</span>
+              <strong>24k+</strong>
+              <span>makers, founders, and community leaders trust Koleka</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">Trending on Koleka</div>
+          <div id="home-trending" class="card-grid"></div>
+          <div id="home-trending-empty" class="banner is-hidden">No campaigns yet — launch yours to light up the feed.</div>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="container card-grid">
+          <article class="project-card">
+            <span class="pill">Storytelling first</span>
+            <h3>Immersive pages for every idea</h3>
+            <p>
+              Combine long-form storytelling, imagery, and stretch goals into a beautifully responsive page. No coding required.
+            </p>
+          </article>
+          <article class="project-card">
+            <span class="pill">Payments</span>
+            <h3>Optimized for African wallets</h3>
+            <p>
+              Accept MTN MoMo pledges instantly with a built-in checkout flow. Demo payments are simulated in this preview.
+            </p>
+          </article>
+          <article class="project-card">
+            <span class="pill">Momentum</span>
+            <h3>Your community, amplified</h3>
+            <p>
+              Rally your supporters with milestone emails, livestream updates, and real-time progress indicators.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container card-grid">
+          <article class="project-card">
+            <h3>Launch in hours, not weeks</h3>
+            <p>
+              Upload your story, set a funding goal, and preview your Koleka page instantly. Flip the switch when you're ready to launch.
+            </p>
+            <a class="btn btn-primary" href="/create">Start a project</a>
+          </article>
+          <article class="project-card">
+            <h3>Back with confidence</h3>
+            <p>
+              Transparent budgets, clear timelines, and community commentary help backers support the ideas that resonate with them most.
+            </p>
+            <a class="btn btn-ghost" href="/projects">Explore campaigns</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav>
+          <a href="/projects">Explore</a>
+          <a href="/create">Launch</a>
+          <a href="/signup">Sign in</a>
+        </nav>
+        <div>© <span id="footer-year"></span> Koleka. Built for modern African crowdfunding.</div>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/home.js"></script>
+  </body>
+</html>

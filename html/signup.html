@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Create a Koleka profile to launch projects and back the ideas you love." />
+    <title>Sign up • Koleka</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container top-bar">
+        <a class="brand" href="/">
+          <span class="brand-mark">K</span>
+          <span>KOLEKA</span>
+        </a>
+        <nav class="nav-links">
+          <a href="/projects" data-nav="projects">Explore</a>
+          <a href="/create" data-nav="create">Launch</a>
+          <a href="/signup" class="btn btn-ghost" data-auth-link>Sign in</a>
+          <span class="pill is-hidden" data-user-pill></span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <span class="badge-light">Start here</span>
+          <h1 class="page-title">Join the Koleka creator network</h1>
+          <p class="page-subtitle">
+            Set up your profile to launch projects, save your favourite campaigns, and follow creators across the continent. This demo signup is instant and keeps your details locally on this browser.
+          </p>
+          <div class="secondary-nav">
+            <a href="/projects">Browse campaigns</a>
+            <a href="/create">Ready to launch?</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container detail-layout">
+          <div class="form-card">
+            <h2>Sign up in under a minute</h2>
+            <p class="helper-text">
+              Enter your details to preview the Koleka experience. No emails are sent and you can reset anytime by clearing your browser storage.
+            </p>
+            <form id="signup-form" class="form-grid">
+              <div class="form-row">
+                <label for="signup-name">Full name</label>
+                <input id="signup-name" name="name" placeholder="Amahle K. Dlamini" autocomplete="name" required />
+              </div>
+              <div class="form-row">
+                <label for="signup-email">Email</label>
+                <input id="signup-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required />
+              </div>
+              <div class="banner is-hidden" id="signup-message"></div>
+              <button type="submit" class="btn btn-primary">Create my demo profile</button>
+            </form>
+          </div>
+
+          <div class="detail-card">
+            <h3>What you unlock</h3>
+            <ul class="timeline">
+              <li class="timeline-item">
+                <strong>Creator dashboard</strong>
+                <p>Track pledges, manage community updates, and set stretch goals when the momentum builds.</p>
+              </li>
+              <li class="timeline-item">
+                <strong>Mobile-first checkout</strong>
+                <p>Let supporters pledge using MTN MoMo or card payments. This preview simulates payments without charging anyone.</p>
+              </li>
+              <li class="timeline-item">
+                <strong>Backer insights</strong>
+                <p>Understand who is supporting your projects and mobilise your top fans with targeted updates.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <nav>
+          <a href="/projects">Explore</a>
+          <a href="/create">Launch</a>
+          <a href="/signup">Sign in</a>
+        </nav>
+        <div>© <span id="footer-year"></span> Koleka. Built for modern African crowdfunding.</div>
+      </div>
+    </footer>
+
+    <script type="module" src="/js/signup.js"></script>
+  </body>
+</html>
