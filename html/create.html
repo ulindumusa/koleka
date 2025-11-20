@@ -1,104 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Launch your Koleka crowdfunding campaign with a guided creation flow." />
-    <title>Launch a project • Koleka</title>
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container top-bar">
-        <a class="brand" href="/">
-          <span class="brand-mark">K</span>
-          <span>KOLEKA</span>
-        </a>
-        <nav class="nav-links">
-          <a href="/projects" data-nav="projects">Explore</a>
-          <a href="/create" data-nav="create">Launch</a>
-          <a href="/signup" class="btn btn-ghost" data-auth-link>Sign in</a>
-          <span class="pill is-hidden" data-user-pill></span>
-        </nav>
-      </div>
-    </header>
 
-    <main>
-      <section class="page-header">
-        <div class="container">
-          <span class="badge-light">Launch</span>
-          <h1 class="page-title">Tell your story. Unlock backing.</h1>
-          <p class="page-subtitle">
-            Craft a magnetic campaign page, showcase your budget and timeline, and share why your idea matters. Koleka helps you rally a global crowd in minutes.
-          </p>
-        </div>
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Launch your Koleka crowdfunding campaign with a guided creation flow." />
+  <title>Launch a project • Koleka</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
 
-      <section class="section">
-        <div class="container detail-layout">
-          <div class="form-card">
-            <h2>Project overview</h2>
-            <p class="helper-text">This demo saves projects in memory only. Refreshing the page will reset your progress.</p>
-            <form id="create-form" class="form-grid">
-              <div class="form-row">
-                <label for="project-title">Project title</label>
-                <input id="project-title" name="title" placeholder="Solar Lanterns for Township Schools" required />
-              </div>
-              <div class="form-row">
-                <label for="project-description">Story</label>
-                <textarea id="project-description" name="description" placeholder="Paint the picture, outline the need, and show your roadmap." required></textarea>
-              </div>
-              <div class="form-row two">
-                <div>
-                  <label for="project-goal">Funding goal (USD)</label>
-                  <input id="project-goal" name="goal" type="number" min="100" step="1" placeholder="5000" required />
-                </div>
-                <div>
-                  <label for="project-owner">Creator name</label>
-                  <input id="project-owner" name="ownerName" placeholder="Defaults to your profile name" />
-                </div>
-              </div>
-              <div class="form-row">
-                <label for="project-email">Contact email</label>
-                <input id="project-email" name="ownerEmail" type="email" placeholder="hello@yourproject.africa" />
-              </div>
-              <div id="create-message" class="banner is-hidden"></div>
-              <button type="submit" class="btn btn-primary">Preview my Koleka page</button>
-            </form>
-          </div>
+<body>
+  <header class="site-header">
+    <div class="container top-bar">
+      <a class="brand" href="/">
+        <span class="brand-mark">K</span>
+        <span>KOLEKA</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/projects" data-nav="projects">Explore</a>
+        <a href="/create" data-nav="create">Launch</a>
+        <a href="/signup" class="btn btn-ghost" data-auth-link>Sign in</a>
+        <span class="pill is-hidden" data-user-pill></span>
+      </nav>
+    </div>
+  </header>
 
-          <div class="detail-card">
-            <h3>Launch checklist</h3>
-            <ul class="timeline">
-              <li class="timeline-item">
-                <strong>Craft your narrative</strong>
-                <p>Explain the problem, your solution, and the impact a successful campaign will have.</p>
-              </li>
-              <li class="timeline-item">
-                <strong>Break down the budget</strong>
-                <p>Show backers exactly how funds will be used. Transparency builds trust.</p>
-              </li>
-              <li class="timeline-item">
-                <strong>Set stretch goals</strong>
-                <p>Give supporters exciting milestones that unlock new features or community rewards.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+  <main>
+    <section class="page-header">
       <div class="container">
-        <nav>
-          <a href="/projects">Explore</a>
-          <a href="/create">Launch</a>
-          <a href="/signup">Sign in</a>
-        </nav>
-        <div>© <span id="footer-year"></span> Koleka. Built for modern African crowdfunding.</div>
+        <span class="badge-light">Launch</span>
+        <h1 class="page-title">Tell your story. Unlock backing.</h1>
+        <p class="page-subtitle">
+          Craft a magnetic campaign page, showcase your budget and timeline, and share why your idea matters. Koleka
+          helps you rally a global crowd in minutes.
+        </p>
       </div>
-    </footer>
+    </section>
 
-    <script type="module" src="/js/create.js"></script>
-  </body>
+    <section class="section">
+      <div class="container detail-layout">
+        <div class="form-card">
+          <h2>Project overview</h2>
+          <p class="helper-text">This demo saves projects in memory only. Refreshing the page will reset your progress.
+          </p>
+          <form id="create-form" class="form-grid">
+            <div class="form-row">
+              <label for="project-title">Project title</label>
+              <input id="project-title" name="title" placeholder="Solar Lanterns for Township Schools" required />
+            </div>
+            <div class="form-row">
+              <label for="project-description">Story</label>
+              <textarea id="project-description" name="description"
+                placeholder="Paint the picture, outline the need, and show your roadmap." required></textarea>
+            </div>
+            <div class="form-row two">
+              <div>
+                <label for="project-goal">Funding goal (USD)</label>
+                <input id="project-goal" name="goal" type="number" min="100" step="1" placeholder="5000" required />
+              </div>
+              <div>
+                <label for="project-owner">Creator name</label>
+                <input id="project-owner" name="ownerName" placeholder="Defaults to your profile name" />
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="project-email">Contact email</label>
+              <input id="project-email" name="ownerEmail" type="email" placeholder="hello@yourproject.africa" />
+            </div>
+            <div id="create-message" class="banner is-hidden"></div>
+            <button type="submit" class="btn btn-primary">Preview my Koleka page</button>
+          </form>
+        </div>
+
+        <div class="detail-card">
+          <h3>Launch checklist</h3>
+          <ul class="timeline">
+            <li class="timeline-item">
+              <strong>Craft your narrative</strong>
+              <p>Explain the problem, your solution, and the impact a successful campaign will have.</p>
+            </li>
+            <li class="timeline-item">
+              <strong>Break down the budget</strong>
+              <p>Show backers exactly how funds will be used. Transparency builds trust.</p>
+            </li>
+            <li class="timeline-item">
+              <strong>Set stretch goals</strong>
+              <p>Give supporters exciting milestones that unlock new features or community rewards.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav>
+        <a href="/projects">Explore</a>
+        <a href="/create">Launch</a>
+        <a href="/signup">Sign in</a>
+      </nav>
+      <div>© <span id="footer-year"></span> Koleka. Built for modern African crowdfunding.</div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/create.js"></script>
+</body>
+
 </html>

@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Dive into a Koleka campaign, learn the story, and support the creator with a pledge." />
-    <title>Project • Koleka</title>
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container top-bar">
-        <a class="brand" href="/">
-          <span class="brand-mark">K</span>
-          <span>KOLEKA</span>
-        </a>
-        <nav class="nav-links">
-          <a href="/projects" data-nav="projects">Explore</a>
-          <a href="/create" data-nav="create">Launch</a>
-          <a href="/signup" class="btn btn-ghost" data-auth-link>Sign in</a>
-          <span class="pill is-hidden" data-user-pill></span>
-        </nav>
-      </div>
-    </header>
 
-    <main id="project-page" data-project-id="">
-      <section class="page-header">
-        <div class="container">
-          <span class="badge-light" id="project-owner">Creator</span>
-          <h1 class="page-title" id="project-title">Loading…</h1>
-          <p class="page-subtitle" id="project-summary">
-            Hang tight while we fetch the story behind this project.
-          </p>
-        </div>
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Dive into a Koleka campaign, learn the story, and support the creator with a pledge." />
+  <title>Project • Koleka</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
 
-      <section class="section">
-        <div class="container detail-layout">
-          <article class="detail-card">
-            <div class="meta-bar">
-              <span id="project-progress-text">0% funded</span>
-              <span id="project-goal">Goal: —</span>
-            </div>
-            <div class="progress">
-              <div id="project-progress-bar" class="progress-bar"></div>
-            </div>
-            <p id="project-description">
-              We are prepping your campaign details.
-            </p>
-            <div class="timeline" id="project-milestones">
-              <div class="timeline-item">
-                <strong>Campaign updates</strong>
-                <p>Fresh announcements appear here as you add updates to your Koleka project.</p>
-              </div>
-            </div>
-          </article>
+<body>
+  <header class="site-header">
+    <div class="container top-bar">
+      <a class="brand" href="/">
+        <span class="brand-mark">K</span>
+        <span>KOLEKA</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/projects" data-nav="projects">Explore</a>
+        <a href="/create" data-nav="create">Launch</a>
+        <a href="/signup" class="btn btn-ghost" data-auth-link>Sign in</a>
+        <span class="pill is-hidden" data-user-pill></span>
+      </nav>
+    </div>
+  </header>
 
-          <aside class="detail-card" id="fund">
-            <h3>Support this project</h3>
-            <form id="fund-form" class="form-grid">
-              <div class="form-row">
-                <label for="fund-amount">Enter an amount (USD)</label>
-                <input id="fund-amount" name="amount" type="number" min="1" step="0.01" placeholder="25" required />
-              </div>
-              <div class="form-row">
-                <label for="fund-phone">MTN MoMo number</label>
-                <input id="fund-phone" name="phone" placeholder="0773 123 456" inputmode="tel" required />
-                <p class="helper-text">Payments are simulated for this demo. No real charges are made.</p>
-              </div>
-              <div id="fund-message" class="banner is-hidden"></div>
-              <button type="submit" class="btn btn-primary">Pledge with MoMo (demo)</button>
-            </form>
-
-            <div class="detail-card" id="pledge-card">
-              <h4>Recent backers</h4>
-              <ul id="pledge-list" class="pledge-list"></ul>
-              <p id="pledge-empty" class="helper-text">Be the first to support this project and appear here.</p>
-            </div>
-          </aside>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
+  <main id="project-page" data-project-id="">
+    <section class="page-header">
       <div class="container">
-        <nav>
-          <a href="/projects">Explore</a>
-          <a href="/create">Launch</a>
-          <a href="/signup">Sign in</a>
-        </nav>
-        <div>© <span id="footer-year"></span> Koleka. Built for modern African crowdfunding.</div>
+        <span class="badge-light" id="project-owner">Creator</span>
+        <h1 class="page-title" id="project-title">Loading…</h1>
+        <p class="page-subtitle" id="project-summary">
+          Hang tight while we fetch the story behind this project.
+        </p>
       </div>
-    </footer>
+    </section>
 
-    <script type="module" src="/js/project.js"></script>
-  </body>
+    <section class="section">
+      <div class="container detail-layout">
+        <article class="detail-card">
+          <div class="meta-bar">
+            <span id="project-progress-text">0% funded</span>
+            <span id="project-goal">Goal: —</span>
+          </div>
+          <div class="progress">
+            <div id="project-progress-bar" class="progress-bar"></div>
+          </div>
+          <p id="project-description">
+            We are prepping your campaign details.
+          </p>
+          <div class="timeline" id="project-milestones">
+            <div class="timeline-item">
+              <strong>Campaign updates</strong>
+              <p>Fresh announcements appear here as you add updates to your Koleka project.</p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="detail-card" id="fund">
+          <h3>Support this project</h3>
+          <form id="fund-form" class="form-grid">
+            <div class="form-row">
+              <label for="fund-amount">Enter an amount (USD)</label>
+              <input id="fund-amount" name="amount" type="number" min="1" step="0.01" placeholder="25" required />
+            </div>
+            <div class="form-row">
+              <label for="fund-phone">MTN MoMo number</label>
+              <input id="fund-phone" name="phone" placeholder="0773 123 456" inputmode="tel" required />
+              <p class="helper-text">Payments are simulated for this demo. No real charges are made.</p>
+            </div>
+            <div id="fund-message" class="banner is-hidden"></div>
+            <button type="submit" class="btn btn-primary">Pledge with MoMo (demo)</button>
+          </form>
+
+          <div class="detail-card" id="pledge-card">
+            <h4>Recent backers</h4>
+            <ul id="pledge-list" class="pledge-list"></ul>
+            <p id="pledge-empty" class="helper-text">Be the first to support this project and appear here.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <nav>
+        <a href="/projects">Explore</a>
+        <a href="/create">Launch</a>
+        <a href="/signup">Sign in</a>
+      </nav>
+      <div>© <span id="footer-year"></span> Koleka. Built for modern African crowdfunding.</div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/project.js"></script>
+</body>
+
 </html>

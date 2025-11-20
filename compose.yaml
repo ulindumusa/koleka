@@ -1,0 +1,35 @@
+name: koleka-pod
+
+services:
+  database:
+    image: postgres:18.1
+    container_name: koleka-postgresql-database_container
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - koleka-postgresql-database_volume:/var/lib/postgresql/data
+    restart: always
+
+  app:
+    build: .
+    container_name: koleka-app_container
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    depends_on:
+      - database
+    restart: always
+
+  tunnel:
+    image: cloudflare/cloudflared:2025.11.1
+    container_name: koleka-cloudflare-tunnel_container
+    command: tunnel run
+    environment:
+      TUNNEL_TOKEN: ${TUNNEL_TOKEN}
+    restart: always
+
+volumes:
+  koleka-postgresql-database_volume:

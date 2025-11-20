@@ -1,79 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Explore Koleka campaigns, discover bold ideas, and back projects that resonate with you." />
-    <title>Explore projects • Koleka</title>
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container top-bar">
-        <a class="brand" href="/">
-          <span class="brand-mark">K</span>
-          <span>KOLEKA</span>
-        </a>
-        <nav class="nav-links">
-          <a href="/projects" data-nav="projects">Explore</a>
-          <a href="/create" data-nav="create">Launch</a>
-          <a href="/signup" class="btn btn-ghost" data-auth-link>Sign in</a>
-          <span class="pill is-hidden" data-user-pill></span>
-        </nav>
-      </div>
-    </header>
 
-    <main>
-      <section class="page-header">
-        <div class="container">
-          <span class="badge-light">Explore Koleka</span>
-          <h1 class="page-title">Campaigns crafted for impact</h1>
-          <p class="page-subtitle">
-            Discover community-driven ideas, thoughtful inventions, and standout creative projects from across Africa. Filter by keyword or sort by latest vs goal progress.
-          </p>
-          <div class="hero-cta">
-            <a href="/create" class="btn btn-primary">Launch your campaign</a>
-            <a href="/signup" class="btn btn-ghost">Join as a backer</a>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+    content="Explore Koleka campaigns, discover bold ideas, and back projects that resonate with you." />
+  <title>Explore projects • Koleka</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container top-bar">
+      <a class="brand" href="/">
+        <span class="brand-mark">K</span>
+        <span>KOLEKA</span>
+      </a>
+      <nav class="nav-links">
+        <a href="/projects" data-nav="projects">Explore</a>
+        <a href="/create" data-nav="create">Launch</a>
+        <a href="/signup" class="btn btn-ghost" data-auth-link>Sign in</a>
+        <span class="pill is-hidden" data-user-pill></span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <span class="badge-light">Explore Koleka</span>
+        <h1 class="page-title">Campaigns crafted for impact</h1>
+        <p class="page-subtitle">
+          Discover community-driven ideas, thoughtful inventions, and standout creative projects from across Africa.
+          Filter by keyword or sort by latest vs goal progress.
+        </p>
+        <div class="hero-cta">
+          <a href="/create" class="btn btn-primary">Launch your campaign</a>
+          <a href="/signup" class="btn btn-ghost">Join as a backer</a>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="form-grid" id="projects-controls">
-            <div class="form-row two">
-              <div>
-                <label for="projects-search">Search campaigns</label>
-                <input id="projects-search" type="search" placeholder="Solar, art, fintech, community..." />
-              </div>
-              <div>
-                <label for="projects-sort">Sort by</label>
-                <select id="projects-sort">
-                  <option value="latest">Latest launches</option>
-                  <option value="progress">Most funded</option>
-                  <option value="goal">Highest goal</option>
-                </select>
-              </div>
+    <section class="section">
+      <div class="container">
+        <div class="form-grid" id="projects-controls">
+          <div class="form-row two">
+            <div>
+              <label for="projects-search">Search campaigns</label>
+              <input id="projects-search" type="search" placeholder="Solar, art, fintech, community..." />
+            </div>
+            <div>
+              <label for="projects-sort">Sort by</label>
+              <select id="projects-sort">
+                <option value="latest">Latest launches</option>
+                <option value="progress">Most funded</option>
+                <option value="goal">Highest goal</option>
+              </select>
             </div>
           </div>
-
-          <div id="projects-grid" class="card-grid" aria-live="polite"></div>
-          <div id="projects-empty" class="banner is-hidden">No projects match your filters yet. Try clearing the search or launch a new idea.</div>
         </div>
-      </section>
-    </main>
 
-    <footer class="footer">
-      <div class="container">
-        <nav>
-          <a href="/projects">Explore</a>
-          <a href="/create">Launch</a>
-          <a href="/signup">Sign in</a>
-        </nav>
-        <div>© <span id="footer-year"></span> Koleka. Built for modern African crowdfunding.</div>
+        <div id="projects-grid" class="card-grid" aria-live="polite"></div>
+        <div id="projects-empty" class="banner is-hidden">No projects match your filters yet. Try clearing the search or
+          launch a new idea.</div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script type="module" src="/js/projects.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="container">
+      <nav>
+        <a href="/projects">Explore</a>
+        <a href="/create">Launch</a>
+        <a href="/signup">Sign in</a>
+      </nav>
+      <div>© <span id="footer-year"></span> Koleka. Built for modern African crowdfunding.</div>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/projects.js"></script>
+</body>
+
 </html>
